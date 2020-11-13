@@ -56,10 +56,10 @@ function draw() {
  
 }
 
-function keyPresed() {
+function keyPressed() {
 if (keyCode === DOWN_ARROW) {
 
-	packageBody = {restitution:3, isStatic:false};
+	Matter.Body.setStatic(packageBody,false);
 }
 }
 
